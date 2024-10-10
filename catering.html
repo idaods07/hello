@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baker Odsbu - Catering</title>
+    <style media="screen">
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        html{
+            height: 100vh;
+        }
+        .bakgrunn1, .bakgrunn2, .bakgrunn3{
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.65;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .bakgrunn1{
+            background-image: url(images/jotun1.JPG);
+            min-height: 100vh;
+            background-attachment: scroll;
+
+        }
+
+        .bakgrunn2{
+            background-image: url(images/jotun2.jpg);
+            min-height: 60vh;
+            background-attachment: fixed;
+
+        }
+        .bakgrunn3{
+            background-image: url(images/jotun3.jpg);
+            min-height: 100vh;
+            background-attachment: fixed;
+        }
+        .tekst1{
+            font-size: 50px;
+            letter-spacing: 20px;
+            font-weight: bold;
+        }
+
+        .tekstboks1{
+            padding: 20px 10vw 20px 10vw;
+        }
+        .tekstboks1 h3{
+            text-align: center;
+            font-size: 40px;
+
+        }
+        .tekstboks1 p{
+            font-size: 25px ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bakgrunn1">
+        <div class="boks1">
+            <span class="tekst1">JOTUNHEIMEN</span>
+
+        </div>
+    </div>
+    <div class="tekstboks1">
+        <h3>Besøk Jotunheimen</h3>
+        <p>Info om Jotunheimen. senfownfpiwefpiwefhpiwhefpiwehfpwief efjwoefiwoiefjwpeg woefn woigjgwioefjwoefih wefhi wepfwef hwoefnwoei f ncwouefhghnw foggfh n23rh pwehf02hef ou24fh wehf</p>
+
+    </div>
+    <div class="bakgrunn2"></div>
+        <div class="boks1">
+            <span class="tekst1"></span>
+
+        </div>
+        <div class="tekstboks1" style="background-color:rgb(91, 91, 223); color: white;">
+            <h3>Trollenes hjem</h3>
+            <p>Info om Jotunheimen. senfownfpiwefpiwefhpiwhefpiwehfpwief efjwoefiwoiefjwpeg woefn woigjgwioefjwoefih wefhi wepfwef hwoefnwoei f ncwouefhghnw foggfh n23rh pwehf02hef ou24fh wehf</p>
+    
+        </div>
+    </div>
+    <div class="bakgrunn3"></div>
+        <div class="boks1">
+            <span class="tekst1">Meld deg inn</span>
+
+        </div>
+    </div>
+    <div class="navn">
+        <a href="">HOME</a>
+        <a href="">CONTACT</a>
+        <a href="">MEMBER</a>
+    </div>
+
+    <script type="text/javascript">
+        var bilde = document.querySelector(".bakgrunn1");
+
+        window.addEventListener("scroll", reduserfart);
+        function reduserfart(){
+            var slep = window.pageYOffset;
+            bilde.style.backgroundPositionY = slep*0.7+"px"
+
+        }
+          
+        
+
+    </script>
+
+</body>
+</html>

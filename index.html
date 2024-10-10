@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baker Odsbu - Forsiden</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #toppfelt{
+            width: 100vw; /*VW= viewport width dvs 100 vw = 100% av sidebredden*/
+            height: 150px;
+            background-color:rgb(255, 255, 255);
+            display: flex;
+            flex-direction: row;
+        }
+        #linker{
+            display: flex;
+            width: 100vw;
+
+        }
+        .linkefelt{
+            width: 100%;
+            height: 45px;
+            background-color: rgb(255, 218, 108);
+            font-family: Calibri Light;
+            font-size: large;
+            color: black;
+            text-decoration: bold;
+    
+        }
+        .linkefelt a{
+            color: black;
+            text-decoration: none;
+        }
+        .linkefelt a:hover{
+            color: rgb(79, 79, 79);
+            font-size: larger;
+        }
+        #lfe{         
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            padding-left: 150px;
+            padding-top: 20px;
+            background-color: rgb(255, 218, 108) ;
+            
+        }
+        #lft{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            padding-left: 150px;
+            padding-top: 20px;
+            background-color: rgb(255, 218, 108) ;
+        }
+        #lfr{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            padding-left: 150px;
+            padding-top: 20px;
+            background-color: rgb(255, 218, 108) ;
+        }
+    
+        #hovedfelt{
+            margin: auto;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(253, 224, 181);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .hoveddiver{
+           width: 100vw;
+           height: 100vh;
+           background-color:rgb(255, 218, 108);
+            /*box-shadow: 10px 10px 20px grey;*/
+            
+        }
+        .hoveddiver p{
+            font-family: 'Franklin Gothic Medium';
+            font-size: large;
+            color: black;
+           
+
+        }
+        .hoveddiver a{
+            font-family: 'Franklin Gothic Medium';
+            font-size: large;
+            color: yellow;
+            text-decoration: none;
+
+        }
+        .hoveddiver h1{
+            font-family:Calibri Light; /*'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif*/
+            font-size: 80px;
+            color: rgb(252, 228, 143);
+            text-shadow: black 2px 2px 2px;
+            text-align: center;
+
+        }
+        
+        .hoveddiver a:hover{
+            font-size: larger;
+            text-decoration: underline;
+
+        }
+        #midtrehoveddiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            font-family: Calibri light;
+            font-size: large;
+            color: rgb(44, 43, 43);
+            text-decoration: bold;
+            font-size: 17px;
+            padding-top: 35px; 
+            padding-bottom: 35px;
+           
+        }
+        #nedrehoveddiv{
+            background-color:rgb(252, 228, 143);
+            width: 70vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+          
+        .toppdiv{
+            height: 150px;
+            width: 150px;
+        }
+       
+        #mtf{
+            flex-grow: 90;
+            background-color: rgb(252, 228, 143);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #htf{
+            flex-grow: 1;
+            font-family:serif;
+            font-size: 50px;
+            background-color:rgb(252, 228, 143);
+            color: black;
+            text-align: center;
+            padding-top: 50px;
+           
+
+        }
+        body{
+            background-image: url(Orangefield.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #boks{
+            background-image: url(images/Kanelboller.jpg);
+            min-height: 600px;
+            width: 100vw;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="toppfelt">
+        <div class="toppdiv" id="mtf">
+            <img src="images/Baker Odsbu logo lang høyre.png" alt="Logo" width: 100vw height=150px>
+        </div>
+        <div class="toppdiv" id="htf">&#9776;</div>
+
+    </div>
+    <div id="linker">
+    
+        <div class="linkefelt" id="lfe"> <a href="omoss.html">Om oss</a>
+        </div>
+        <div class="linkefelt" id="lft"> <a href="vårebutikker.html">Våre butikker</a>
+        </div>
+        <div class="linkefelt" id="lfr"> <a href="catering.html">Catering</a>
+
+        </div>
+
+    </div>
+    <div id="hovedfelt">
+        <div class="hoveddiver" id="boks">
+            <h1>Ferske bakevarer hver dag</h1>
+            <br>
+            
+        <br>
+       </div>
+        <div class="hoveddiver" id="midtrehoveddiv">
+            <h2>
+                Baker Odsbu har i alle år vært kjent for å ha ferske og gode bakevarer. Bedriften ble stiiftet i 1985 og har etter det bare forsatt å vokse. Det startet med ett enkelt lite lokale, og i dag har vi hele 46 lokaler spredt utover hele Norge.
+                <br>
+                <br>
+                Hos Baker Odsbu vil du alltid bli møtt med et smil og vi kan garantere rimelige priser.
+                <br>
+                <br>
+                Velbekomme!
+            </h2>
+        
+        </div>
+        <div class="hoveddiver" id="nedrehoveddiv">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2042.7277745452238!2d10.95282834152879!3d59.20384899231215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46440331d9357129%3A0x9986bbc956c84d3c!2sKasernegaten%2C%201632%20Fredrikstad!5e0!3m2!1sno!2sno!4v1725967675046!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </div>
+
+    
+</body>
+</html>

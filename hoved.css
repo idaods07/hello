@@ -1,0 +1,65 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Century Gothic", "Arial", sans-serif;
+}
+#toppfelt{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(175, 121, 54);
+    color: rgb(180, 58, 58);
+    height: 60px;
+    width: 100vw;
+}
+#logo{
+    font-size: 40px;
+    width: 100px;
+    text-align: center;
+
+}
+#tittel{
+    width: calc(100vw - 100px);
+    text-align: center;
+    padding-top: 8px;
+}
+#burger{
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    cursor: pointer;
+}
+#veksler{
+    display: none;
+}
+#meny{
+    display: none;
+    background-color: rgb(68, 65, 65);
+    width: 200px;
+    height: 150px;
+    font-size: 20px;
+    color: lightgray;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+#meny a{
+    font-size: 20px;
+    color: lightgray;
+    text-decoration: none;
+    padding: 10px;
+}
+#meny a:hover{
+    text-decoration: underline;
+}
+#meny ul{
+    list-style: none;
+    text-align: left;
+}
+#meny li{
+    border-bottom: 1px solid lightgray;
+}
+#veksler:checked ~ #meny{
+    display: block;
+}
